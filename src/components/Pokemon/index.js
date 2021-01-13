@@ -8,10 +8,13 @@ const Pokemon = (props) => {
 
   return (
     <Container>
+      <h1># {id}</h1>
+      <div>
+        <h2>{name}</h2>
+        <h3>{type}</h3>
+        <h4>{averageWeight.value} {averageWeight.measurementUnit}</h4>
+      </div>
       <img src={image} alt={name}/>
-      <h2>{name}</h2>
-      <h3>{type}</h3>
-      <h4>{averageWeight.value} {averageWeight.measurementUnit}</h4>
     </Container>
   );
 };

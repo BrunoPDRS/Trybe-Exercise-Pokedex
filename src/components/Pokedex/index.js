@@ -3,10 +3,16 @@ import propTypes from 'prop-types';
 
 import Pokemon from '../Pokemon';
 
+import { Container, Header } from './styles';
+
 const Pokedex = (props) => (
   <>
-    <h1>Pokedex Data</h1>
-    {props.pokemons.map(pokemon => <Pokemon pokeInfo={pokemon}/>)};
+    <Header>Pokedex Data</Header>
+    <Container>
+      {props.pokemons
+        .map(pokemon => <Pokemon pokeInfo={pokemon}/>) 
+      };
+    </Container>
   </>
 );
 

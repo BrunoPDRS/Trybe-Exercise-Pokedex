@@ -9,6 +9,7 @@ export default createGlobalStyle`
   }
 
   body {
+    font-family: Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 
