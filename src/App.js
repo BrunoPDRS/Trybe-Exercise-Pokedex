@@ -1,12 +1,18 @@
-import Pokedex from './components/Pokedex';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom'
 
-import pokeData from './data';
+import Routes from './routes';
 
-import './App.css';
+import GlobalStyle from './styles/global';
 
 function App() {
   return (
-    <Pokedex pokemons={pokeData} />
+    <>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+      <GlobalStyle />
+    </>
   );
 }
 
